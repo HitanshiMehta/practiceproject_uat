@@ -1,0 +1,1 @@
+from practiceapp.managers import PlaceManager
