@@ -11,6 +11,7 @@ class PlaceSerializer(serializers.ModelSerializer):
         if 'hitanshi' not in value.lower():
             raise serializers.ValidationError("Hitanshi name me hona j chahiye")
 
+    # I am so happy. Now i know about git. Loving it>Do you? YES
     def validate_address(self, value):
         if 'surat' not in value.lower():
             raise serializers.ValidationError("Address is not of surat")
