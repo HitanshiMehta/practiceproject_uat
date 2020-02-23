@@ -6,6 +6,7 @@ from practiceapp.models.PlaceModel import Place
 
 class PlaceSerializer(serializers.ModelSerializer):
 
+    #i'm the one...
     def check_name(value):
         if 'hitanshi' not in value.lower():
             raise serializers.ValidationError("Hitanshi name me hona j chahiye")
